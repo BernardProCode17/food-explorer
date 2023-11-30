@@ -1,0 +1,26 @@
+Dark Blue Colour - 
+HEX #005991
+RGB (0, 89, 145,) 
+
+Light Blue Colour -
+HEX #1A71A9
+RGB (26, 113, 169)
+
+Header Colour -
+HEX #F9F9F9
+RGB (249, 249, 249)
+
+Seacrh Box Colour -
+HEX #DEDEDE
+RGB (222, 222, 222)
+
+Social Media Icons -
+HEX #1A71A9
+RGB (26, 113, 169)
+
+Heading, links, Titles Colour -
+HEX #FFFFFF
+RGB (255, 255, 255)
+
+Body text Colour
+HEX #000
