@@ -27,14 +27,15 @@
 
    <header id="top">
 
-      <section>
+      <section class="">
+
          <!-- maybe we can use the h1 instead of the img, because their is no h1 in the picture, and the logo is an image not a title -->
          <!-- styles the h1 to look like the logo -->
          <!-- <img src="Images/logo.png" alt="image of logo that say"> -->
          <h1><span>Food</span> <span>Explorer</span></h1>
 
          <!-- mobile heaader -->
-         <div>
+         <div class >
             <img src="Images/small-logo.jpg" alt="picture of the restaurant logo with the letter 'FE'" width="55px" height="35px">
             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
          </div>
@@ -70,8 +71,8 @@
          </div>
       </section>
 
-      <nav aria-label="header Navigation">
-         <ul>
+      <nav aria-label="header Navigation" class="nav-bar">
+         <ul class="nav-link">
             <li><a href="Index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Review.html">Review</a></li>
@@ -79,7 +80,7 @@
             <li><a href="Contact.html">Contact</a></li>
          </ul>
 
-         <div>
+         <div class="search">
             <input type="search" name="#" id="search" placeholder="search">
             <!-- position the button over the search box -->
             <button aria-label="search box submit button">
@@ -94,9 +95,9 @@
 
    </header>
 
-   <main>
+   <main class="site-wrapper">
 
-      <section>
+      <section class="photo-grid">
          <!-- Add hover translation animation to make the images zoom in when hoverd over -->
          <figure>
             <img src="Images/mussel.jpg" alt="photo of a bowl of mussel at a restaurant" width="704px" height="240px">
@@ -116,7 +117,7 @@
 
       </section>
 
-      <section>
+      <section class="articles">
 
          <article>
 
@@ -148,7 +149,7 @@
 
       </section>
 
-      <button>
+      <button class="post-btn">
          <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" aria-hidden="true"
             focuable="false">
             <path
@@ -157,7 +158,7 @@
          Older Posts</button>
    </main>
 
-   <aside>
+   <aside class="sidebar-recipes">
 
       <h2>Latest Recipes</h2>
 
@@ -191,9 +192,9 @@
       </a>
    </aside>
 
-   <aside>
+   <aside class="sidebar-link">
       <h2>Cuisines</h2>
-      <nav aria-label="side bar Navigation">
+      <nav aria-label="side bar Navigation" class="side-nav">
          <ul>
             <li><a href="#">American <small>(95)</small></a></li>
             <li><a href="#">Asian <small>(33)</small></a></li>
@@ -216,11 +217,11 @@
       </nav>
    </aside>
 
+   <footer class="footer">
+      <p>&copy 2023 Site Design by ProjectTeam 3. For Educational purpose only. Image Credit</p>
+      <a href="#top" aria-label="link back to top of page">Top</a>
+   </footer>
 </body>
 
-<footer>
-   <p>&copy 2023 Site Design by ProjectTeam 3. For Educational purpose only. Image Credit</p>
-   <a href="#top" aria-label="link back to top of page">Top</a>
-</footer>
 
 </html>
