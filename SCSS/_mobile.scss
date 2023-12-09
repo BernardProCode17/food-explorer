@@ -9,6 +9,13 @@ body{
     height: 100%;
 }
 
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+}
+
+figcaption {
+    text-transform: uppercase;
+}
 
 // =================
 // header
@@ -112,10 +119,11 @@ header {
     top: 3.5rem;
     margin: .5rem;
 }
-
+// =================
+// photo-grid
+// =================
 .photo-grid {
     
-   
     & figure {
         max-width: 41.875rem;
         height: 20rem;
@@ -139,7 +147,9 @@ header {
         }
     }
 }
-
+// =================
+// aside
+// =================
 aside {
     background-color: $header-colour;
 
@@ -150,16 +160,46 @@ aside {
         margin: 0 auto;
     }
 
+    & h3 {
+        color:$body-colour;
+        font-weight: 300;
+    }
+
     & article {
         display: flex;
         align-items: center;
         justify-content: start;
         gap: 1.5rem;
-        padding: .2rem;
-        margin: .5rem;
-
+        padding: .7rem;
+        
         & img {
             border: 2px solid $light-blue;
         }
     }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .gray {
+        background-color: rgb(234, 234, 234);
+    }
 }
+
+.sidebar-link {
+    height: 18rem;
+    display: block;
+
+    
+}
+
+.side-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    padding: .5rem;
+    color:$body-colour;
+    font-weight: 300;
+}
+

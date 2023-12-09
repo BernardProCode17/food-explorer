@@ -6,6 +6,14 @@ body {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
+figcaption {
+  text-transform: uppercase;
+}
+
 h1 {
   display: none;
 }
@@ -116,15 +124,43 @@ aside {
 aside h2 {
   background-color: #1A71A9;
   color: #FFFFFF;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+aside h3 {
+  color: #000;
+  font-weight: 300;
 }
 aside article {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 1.5rem;
+  padding: 0.7rem;
 }
 aside article img {
   border: 2px solid #1A71A9;
+}
+aside a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+aside .gray {
+  background-color: rgb(234, 234, 234);
+}
+
+.sidebar-link {
+  height: 18rem;
+  display: block;
+}
+
+.side-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: #000;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=main.css.map */
