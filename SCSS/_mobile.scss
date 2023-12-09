@@ -4,6 +4,8 @@
 body{
     background-image: url(../Images/bg.jpg);
     font-family: $Body-text;
+    font-size: 1.2rem;
+    font-weight: 300;
     color: $body-colour;
     position: relative;
     height: 100%;
@@ -15,6 +17,22 @@ h1,h2,h3,h4,h5 {
 
 figcaption {
     text-transform: uppercase;
+}
+
+article {
+    background-color: $header-colour;
+    color: $body-colour;
+    padding: .5rem;
+    
+}
+
+button {
+    border: 0px;
+    background-color: $light-blue;
+    margin: .5rem auto;
+    color: $HLT;
+    text-transform: uppercase;
+    padding: .3rem;
 }
 
 // =================
@@ -74,7 +92,6 @@ header {
     }
 
     & a {
-        
         color: $HLT;
         text-decoration: none;
     }
@@ -147,6 +164,32 @@ header {
         }
     }
 }
+
+// =================
+// articles
+// =================
+
+.articles {
+
+    & h2 {
+        color: $light-blue;
+        font-size: 2rem;
+        margin: .5rem 0 0;
+        font-weight: 400;
+    }
+
+    & article {
+        margin: 1rem auto;
+    }
+
+    & p{
+        margin: 0.2rem auto 1.2rem;
+    }
+
+    
+
+}
+
 // =================
 // aside
 // =================
@@ -188,7 +231,7 @@ aside {
 }
 
 .sidebar-link {
-    height: 18rem;
+    height: fit-content;
     display: block;
 
     
@@ -201,5 +244,28 @@ aside {
     padding: .5rem;
     color:$body-colour;
     font-weight: 300;
+
+    & a:visited {
+        color:$body-colour;
+    }
+}
+
+
+
+// =================
+// footer
+// =================
+footer {
+    background-color: $Deep-blue;
+    color: $HLT;
+    padding: .5rem;
+
+    & p{
+        margin: 0;
+    }
+
+    & a {
+        display: none;
+    }
 }
 

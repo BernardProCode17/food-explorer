@@ -1,6 +1,7 @@
 body {
   background-image: url(../Images/bg.jpg);
   font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
   color: #000;
   position: relative;
   height: 100%;
@@ -12,6 +13,21 @@ h1, h2, h3, h4, h5 {
 
 figcaption {
   text-transform: uppercase;
+}
+
+article {
+  background-color: #F9F9F9;
+  color: #000;
+  padding: 0.5rem;
+}
+
+button {
+  border: 0px;
+  background-color: #1A71A9;
+  margin: 0.5rem auto;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 0.3rem;
 }
 
 h1 {
@@ -118,6 +134,19 @@ header {
   padding: 0.5rem;
 }
 
+.articles h2 {
+  color: #1A71A9;
+  font-size: 2rem;
+  margin: 0.5rem 0 0;
+  font-weight: 400;
+}
+.articles article {
+  margin: 1rem auto;
+}
+.articles p {
+  margin: 0.2rem auto 1.2rem;
+}
+
 aside {
   background-color: #F9F9F9;
 }
@@ -150,7 +179,7 @@ aside .gray {
 }
 
 .sidebar-link {
-  height: 18rem;
+  height: fit-content;
   display: block;
 }
 
@@ -161,6 +190,21 @@ aside .gray {
   padding: 0.5rem;
   color: #000;
   font-weight: 300;
+}
+.side-nav a:visited {
+  color: #000;
+}
+
+footer {
+  background-color: #005991;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
