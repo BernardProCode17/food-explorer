@@ -110,4 +110,21 @@ header {
   padding: 0.5rem;
 }
 
+aside {
+  background-color: #F9F9F9;
+}
+aside h2 {
+  background-color: #1A71A9;
+  color: #FFFFFF;
+}
+aside article {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+}
+aside article img {
+  border: 2px solid #1A71A9;
+}
+
 /*# sourceMappingURL=main.css.map */

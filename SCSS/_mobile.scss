@@ -137,8 +137,29 @@ header {
             width: 100%;
             padding: .5rem;
         }
-    
+    }
+}
+
+aside {
+    background-color: $header-colour;
+
+    & h2 {
+        background-color: $light-blue;
+        color: $HLT;
+        padding: .5rem;
+        margin: 0 auto;
     }
 
+    & article {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1.5rem;
+        padding: .2rem;
+        margin: .5rem;
 
+        & img {
+            border: 2px solid $light-blue;
+        }
+    }
 }
