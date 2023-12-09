@@ -10,11 +10,13 @@ body{
 }
 
 
+// =================
+// header
+// =================
 h1 {
     display: none;
 }
 
-// header
 header {
     padding: .5rem;
     margin: 0 auto;
@@ -39,8 +41,9 @@ header {
     }
 }
 
+// =================
 // navigation bar
-
+// =================
 .nav-bar {
     display: none;
     font-family: $Nav-text;
@@ -59,9 +62,7 @@ header {
         background-color: $light-blue;
         border: 1px solid $Deep-blue;
         
-        
         text-align: center;
-       
         
     }
 
@@ -109,26 +110,32 @@ header {
     display: block;
     position: absolute;
     top: 3.5rem;
+    margin: .5rem;
 }
 
 .photo-grid {
-    margin: .5rem;
-    width: 100%;
+    
+   
     & figure {
         max-width: 41.875rem;
+        height: 20rem;
         margin: 0 auto;
         position: relative;
 
         & img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         & figcaption {
             position: absolute;
             bottom: 0;
             background-color: black;
-            color: HLT;
+            color: $HLT;
+            font-size: 2rem;
             width: 100%;
+            padding: .5rem;
         }
     
     }

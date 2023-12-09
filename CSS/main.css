@@ -86,26 +86,28 @@ header {
   display: block;
   position: absolute;
   top: 3.5rem;
+  margin: 0.5rem;
 }
 
-.photo-grid {
-  margin: 0.5rem;
-  width: 100%;
-}
 .photo-grid figure {
   max-width: 41.875rem;
+  height: 20rem;
   margin: 0 auto;
   position: relative;
 }
 .photo-grid figure img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .photo-grid figure figcaption {
   position: absolute;
   bottom: 0;
   background-color: black;
-  color: HLT;
+  color: #FFFFFF;
+  font-size: 2rem;
   width: 100%;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
