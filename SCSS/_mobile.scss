@@ -1,9 +1,12 @@
+@use 'variables' as *;
 // mobile style
 
 body{
     background-image: url(../Images/bg.jpg);
     font-family: $Body-text;
     color: $body-colour;
+    position: relative;
+    height: 100%;
 }
 
 
@@ -26,24 +29,27 @@ header {
 
 .navigation {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: .2rem;
 
+     svg {
+        height: 35px;
+        width: 30px;
+    }
 }
 
 // navigation bar
-.search {
-    width: 100%;
-}
 
 .nav-bar {
-    display: block;
+    display: none;
     font-family: $Nav-text;
     position: relative;
 
     & ul {
         padding: 0;
         list-style: none;
+        margin: .2rem auto;
     }
 
     & li {
@@ -71,8 +77,61 @@ header {
     }
 }
 
+.search {
+    position: relative;
+    width: 100%;
+    margin: .5rem auto;
+}
+
+#search {
+    width: 100%;
+    border: 0px;
+}
+
+#search-btn {
+    position: absolute;
+    right: 0;
+}
+
+
 .social-media {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding: .5rem;
+    
+}
+
+// =================
+// main-wrapper 
+// =================
+.main-wrapper {
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+}
+
+.photo-grid {
+    margin: .5rem;
+    width: 100%;
+    & figure {
+        max-width: 41.875rem;
+        margin: 0 auto;
+        position: relative;
+
+        & img {
+            width: 100%;
+        }
+        
+        & figcaption {
+            position: absolute;
+            bottom: 0;
+            background-color: black;
+            color: HLT;
+            width: 100%;
+        }
+    
+    }
+
+
 }
