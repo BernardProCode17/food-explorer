@@ -23,7 +23,6 @@ article {
     background-color: $header-colour;
     color: $body-colour;
     padding: .5rem;
-    
 }
 
 button {
@@ -33,6 +32,14 @@ button {
     color: $HLT;
     text-transform: uppercase;
     padding: .3rem;
+}
+
+svg {
+    fill: $Deep-blue;
+}
+
+input {
+    padding: .5rem;
 }
 
 // =================
@@ -59,44 +66,47 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .2rem;
+    // padding: .2rem;
     position: relative;
 
      svg {
         height: 35px;
         width: 30px;
+        padding: .2rem;
     }
 }
 
 // =================
-// navigation bar
+// navigation link
 // =================
-.nav-bar {
+#navigation-menu {
     display: none;
-    font-family: $Nav-text;
-    position: relative;
-    z-index: 1000;
+}
 
-    & ul {
-        padding: 0;
-        list-style: none;
-        margin: .2rem auto;
-    }
+.nav-link {
+    
+    // z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: .2rem auto;
+    width: 100%;
 
     & li {
-        
-        padding: .5rem;
-        margin: 0 auto;
-        background-color: $light-blue;
-        border: 1px solid $Deep-blue;
-        
+        font-family: $Nav-text;
         text-align: center;
         
+        padding: 0;
+        width: 100%;
     }
 
     & a {
+        display: block;
+        background-color: $light-blue;
+        border: 1px solid $Deep-blue;
         color: $HLT;
         text-decoration: none;
+        padding: .5rem ;
+        
     }
 
     & li a:hover {
@@ -107,8 +117,13 @@ header {
 
 .search {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     margin: .5rem auto;
+    padding: .2rem;
+    border: $body-colour 1px solid;
 }
 
 #search {
@@ -118,7 +133,8 @@ header {
 
 #search-btn {
     position: absolute;
-    right: 0;
+    right: .4rem;
+    background-color: transparent;
 }
 
 
@@ -127,7 +143,6 @@ header {
     justify-content: center;
     gap: 1rem;
     padding: .5rem;
-    
 }
 
 // =================
@@ -198,7 +213,7 @@ header {
 // =================
 // aside
 // =================
-aside {
+.bar {
     background-color: $header-colour;
 
     & h2 {
