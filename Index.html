@@ -38,7 +38,7 @@
          <div class="navigation">
             <img src="Images/small-logo.jpg" alt="picture of the restaurant logo with the letter 'FE'" width="55px"
                height="35px">
-            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" id="menu-toggle">
                <path
                   d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
             </svg>
@@ -47,7 +47,7 @@
 
       </section>
 
-      <nav aria-label="header Navigation" class="nav-bar">
+      <nav aria-label="header Navigation" class="nav-bar" id="navigation-menu">
          <div class="search">
             <input type="search" name="#" id="search" placeholder="search">
             <!-- position the button over the search box -->
@@ -245,3 +245,15 @@
 
 
 </html>
+
+
+<!-- ***** Hey Check out the notes I left you***** -->
+// I changed the max-with to 320px in the normalize_reset.css file
+// Because it's not alined in the center of the page and it doesn't start from 320px
+//As well the background image should fill 100% of the 320px width
+// when I changed the max-with to 320px in the normalize_reset.css file the background image filled the 100% of the screen and not the 320px width.
+//I had a similar thing with it as well in one of my projects. Maybe try it on the main or site wrapper.
+
+// if not we can try fix it together when we meet on thursday.
+
+//Other than that you just need to bring the header forward with the z-index. I tried it but I didn't want to go throught your code as you know it best and where to fix it. 
