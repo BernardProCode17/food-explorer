@@ -9,6 +9,7 @@ body {
   body {
     font-family: "Roboto Condensed", sans-serif;
     max-width: fit-content;
+    background-color: white;
   }
   .logo-text {
     display: none;
@@ -56,11 +57,6 @@ body {
     right: 10px;
     background-color: #ffffff;
     border: none;
-  }
-}
-@media (min-width: 500px) {
-  body {
-    background-color: white;
   }
 }
 
