@@ -27,9 +27,9 @@ body {
   }
   .nav-bar {
     display: flex;
-    flex-direction: row-reverse;
-    list-style-type: none;
+    flex-direction: row;
     justify-content: center;
+    list-style-type: none;
     gap: 1rem;
     background-color: #005991;
     padding: 0;
@@ -57,6 +57,11 @@ body {
     right: 10px;
     background-color: #ffffff;
     border: none;
+  }
+  .photo-grid img {
+    width: 35rem;
+    height: 147.27px;
+    object-fit: cover;
   }
 }
 
