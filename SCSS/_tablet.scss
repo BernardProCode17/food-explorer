@@ -1,4 +1,82 @@
+@use 'variables' as *;
 // small tablet 
+@media(min-width: 31.25em){
+
+    a {
+        text-decoration: none;
+        color: $header-colour;
+    }
+
+    body{
+        font-family: $Body-text;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+        h1{
+            color: $Deep-blue;
+            font-family: $Heading-text;
+            margin-left: 1.5rem;
+           
+        }
+        .navigation img{
+            display: none;
+        }
+        .navigation {
+            display: none;
+        }
+
+        .nav-bar{
+            display: flex;
+            flex-direction: row-reverse;
+            list-style-type: none;
+            justify-content: space-evenly;
+            gap: 1rem;
+            background-color: $Deep-blue;
+        }
+
+        .social-media{
+            display: none;
+        }
+
+        .nav-link  {
+            list-style-type: none;
+            display: flex;
+            gap: 3rem;
+            padding-left: 2rem;
+        }
+
+        #search{
+            width: 8.5rem;
+            height: 2rem;
+            border-radius: 0.625rem;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.313rem;
+        }
+
+        .search button{
+            position: absolute;
+            top: 0.77rem;
+            right: 10px;
+            background-color: #ffffff;
+            border: none;
+            
+        }
+
+        
+
+        
+
+       
+
+        
+
+        
+
+        
+        
+    }
 @media (min-width: 500px){
     body{
         background-color: white;
