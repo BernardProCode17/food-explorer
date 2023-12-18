@@ -32,6 +32,11 @@
         margin-left: 1.5rem;  
         }
 
+    h2{
+        font-family: $Heading-text;
+        font-weight: 500;
+    }
+
         .navigation img{
             display: none;
         }
@@ -121,7 +126,9 @@
         article h2 {
             background-color: $light-blue;
             color: $HLT;
-            padding-left: 1rem;
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
             width: 29rem;
             text-transform: uppercase;
         }
