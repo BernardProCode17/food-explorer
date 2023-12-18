@@ -99,18 +99,6 @@ body {
     top: 35.5rem;
     padding: 0.5rem 13.4rem 0.5rem 0.5rem;
   }
-  article h2 {
-    background-color: #1A71A9;
-    color: #FFFFFF;
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    width: 29rem;
-    text-transform: uppercase;
-  }
-  article {
-    margin-left: 1rem;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
