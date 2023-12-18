@@ -26,12 +26,12 @@
         display: none;
     }
 
-        h1{
-            color: $Deep-blue;
-            font-family: $Heading-text;
-            margin-left: 1.5rem;
-           
+    h1{
+        color: $Deep-blue;
+        font-family: $Heading-text;
+        margin-left: 1.5rem;  
         }
+
         .navigation img{
             display: none;
         }
@@ -95,7 +95,6 @@
             font-size: 1.5rem;
             text-transform: uppercase;
             
-          
         
         }
 
@@ -123,6 +122,8 @@
             background-color: $light-blue;
             color: $HLT;
             padding-left: 1rem;
+            width: 29rem;
+            text-transform: uppercase;
         }
 
         article {

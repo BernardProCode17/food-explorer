@@ -99,6 +99,8 @@ body {
     background-color: #1A71A9;
     color: #FFFFFF;
     padding-left: 1rem;
+    width: 29rem;
+    text-transform: uppercase;
   }
   article {
     margin-left: 1rem;
