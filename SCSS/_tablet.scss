@@ -123,7 +123,19 @@
             padding: 0.5rem 13.4rem 0.5rem 0.5rem;
         }
 
-        
+        .sidebar-recipes h2 {
+            background-color: $light-blue;
+            color: $HLT;
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            width: 29rem;
+            text-transform: uppercase;
+        }
+
+        .sidebar-recipes {
+            margin-left: 1rem;
+        }
 
         
 
