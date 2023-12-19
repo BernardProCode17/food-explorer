@@ -53,13 +53,17 @@ body {
     grid-area: photo-grid;
   }
   .articles {
-    grid-area: articles;
-    background-color: #fff;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     margin: 1rem;
     position: relative;
-    gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+  .articles article {
+    background-color: #fff;
+    margin: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
   }
   .recipes {
     grid-area: recipes;
