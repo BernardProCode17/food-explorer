@@ -75,6 +75,7 @@
         margin: 1rem;
         position: relative;
         grid-row-gap: 1rem;
+        margin-top: 0;
     }
 
     .articles article {
@@ -224,7 +225,7 @@
         padding-left: 0.5rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        width: 93.5%;
+        width: 94%;
         text-transform: uppercase;
         margin-bottom: 0;
         margin-left: 1rem;
@@ -239,7 +240,7 @@
         grid-template-columns: 20% 80%;
         margin-bottom: 2rem;
         margin-left: 1rem;
-        width: 29rem;
+        width: 94%;
         align-items: center;
     }
 
@@ -256,7 +257,7 @@
         padding-left: 0.5rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        width: 93.5%;
+        width: 94%;
         text-transform: uppercase;
         margin-left: 1rem;
     }
