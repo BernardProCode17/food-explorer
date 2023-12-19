@@ -75,11 +75,6 @@ body {
   .footer {
     grid-area: footer;
   }
-  article,
-  a,
-  footer p {
-    margin-left: 1rem;
-  }
   article h2 {
     color: #1A71A9;
     text-transform: uppercase;
@@ -186,14 +181,21 @@ body {
   .sidebar-recipes-grid article {
     display: grid;
     grid-template-columns: 20% 80%;
-    margin-bottom: 2rem;
     margin-left: 1rem;
     width: 94%;
     align-items: center;
+    column-gap: 1rem;
   }
   .sidebar-recipes img {
     border: solid 1px #005991;
     height: auto;
+    margin: 1rem;
+  }
+  .sidebar-recipes-grid a:nth-of-type(odd) article {
+    background-color: #FFFFFF;
+  }
+  .sidebar-recipes-grid a:nth-of-type(even) article {
+    background-color: lightblue;
   }
   .sidebar-link h2 {
     background-color: #1A71A9;
