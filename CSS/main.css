@@ -25,7 +25,6 @@ article {
 button {
   border: 0px;
   background-color: #1A71A9;
-  margin: 0.5rem auto;
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 0.3rem;
@@ -68,6 +67,24 @@ header {
   padding: 0.2rem;
 }
 
+@media (min-width: 330px) {
+  h1 {
+    display: none;
+    margin: 0;
+    width: 70%;
+  }
+  h1 .food {
+    color: #005991;
+  }
+  h1 .explorer {
+    font-weight: 400;
+    color: #1A71A9;
+  }
+  .navigation img {
+    content: url(../Images/logo.png);
+    width: 250px;
+  }
+}
 #navigation-menu {
   display: none;
 }
@@ -133,6 +150,41 @@ header {
   margin: 0.5rem;
 }
 
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.photo-grid {
+  order: 1;
+}
+
+.bar {
+  order: 2;
+}
+
+.articles {
+  order: 3;
+}
+
+.post-btn {
+  order: 4;
+  text-align: left;
+  background-color: transparent;
+  color: #1A71A9;
+  font-size: 2rem;
+  margin: 0 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.post-btn svg {
+  height: 2rem;
+  width: 2rem;
+}
+
 .photo-grid figure {
   max-width: 41.875rem;
   height: 20rem;
@@ -148,7 +200,7 @@ header {
 .photo-grid figure figcaption {
   position: absolute;
   bottom: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.54);
   color: #FFFFFF;
   font-size: 2rem;
   width: 100%;
@@ -160,12 +212,17 @@ header {
   font-size: 2rem;
   margin: 0.5rem 0 0;
   font-weight: 400;
+  width: 100%;
 }
 .articles article {
-  margin: 1rem auto;
+  margin: 0 0 0.8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 .articles p {
   margin: 0.2rem auto 1.2rem;
+  width: 100%;
 }
 
 .bar {
@@ -176,6 +233,7 @@ header {
   color: #FFFFFF;
   padding: 0.5rem;
   margin: 0 auto;
+  font-weight: 400;
 }
 .bar h3 {
   color: #000;
@@ -211,6 +269,7 @@ header {
   padding: 0.5rem;
   color: #000;
   font-weight: 300;
+  font-size: 1rem;
 }
 .side-nav a:visited {
   color: #000;

@@ -28,7 +28,6 @@ article {
 button {
     border: 0px;
     background-color: $light-blue;
-    margin: .5rem auto;
     color: $HLT;
     text-transform: uppercase;
     padding: .3rem;
@@ -47,6 +46,7 @@ input {
 // =================
 h1 {
     display: none;
+    
 }
 
 header {
@@ -73,6 +73,16 @@ header {
         height: 35px;
         width: 30px;
         padding: .2rem;
+    }
+}
+
+@media (min-width: 330px) {
+
+    .navigation {
+        img {
+            content: url(../Images/logo.png);
+            width: 250px;
+        }
     }
 }
 
@@ -154,6 +164,47 @@ header {
     top: 3.5rem;
     margin: .5rem;
 }
+
+// =================
+// site-wrapper 
+// =================
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.photo-grid {
+    order: 1;
+}
+
+.bar {
+    order: 2;
+}
+
+.articles {
+    order: 3;
+}
+
+.post-btn {
+    order: 4;
+    text-align: left;
+    background-color: transparent;
+    color: $light-blue;
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
 // =================
 // photo-grid
 // =================
@@ -176,7 +227,7 @@ header {
         & figcaption {
             position: absolute;
             bottom: 0;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.54);
             color: $HLT;
             font-size: 2rem;
             width: 100%;
@@ -190,20 +241,27 @@ header {
 // =================
 
 .articles {
+    
 
     & h2 {
         color: $light-blue;
         font-size: 2rem;
         margin: .5rem 0 0;
         font-weight: 400;
+        width: 100%;
     }
 
     & article {
-        margin: 1rem auto;
+        margin: 0 0 0.8rem 0;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
     }
 
     & p{
         margin: 0.2rem auto 1.2rem;
+        width: 100%;
     }
 
     
@@ -221,6 +279,7 @@ header {
         color: $HLT;
         padding: .5rem;
         margin: 0 auto;
+        font-weight: 400;
     }
 
     & h3 {
@@ -264,6 +323,7 @@ header {
     padding: .5rem;
     color:$body-colour;
     font-weight: 300;
+    font-size: 1rem;
 
     & a:visited {
         color:$body-colour;
