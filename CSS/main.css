@@ -8,7 +8,11 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   text-transform: uppercase;
 }
 
@@ -68,18 +72,6 @@ header {
 }
 
 @media (min-width: 330px) {
-  h1 {
-    display: none;
-    margin: 0;
-    width: 70%;
-  }
-  h1 .food {
-    color: #005991;
-  }
-  h1 .explorer {
-    font-weight: 400;
-    color: #1A71A9;
-  }
   .navigation img {
     content: url(../Images/logo.png);
     width: 250px;
@@ -140,7 +132,25 @@ header {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+.social-media a {
   padding: 0.5rem;
+}
+.social-media a svg {
+  width: 30px;
+  height: 30px;
+  transition: fill 1s;
+}
+.social-media a:hover svg {
+  fill: rgb(194, 194, 194);
+}
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 .main-wrapper {
