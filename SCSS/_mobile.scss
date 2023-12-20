@@ -204,7 +204,7 @@ header {
     
 }
 
-.social-media .google:nth-child(2):before {
+.social-media a:nth-child(2):before {
     content: url(../Icons/Icons/google.svg);
     width: 64%;
     left: 8.5px;
@@ -212,7 +212,7 @@ header {
     background-color: $header-colour;
 }
 
-.social-media .twitter:nth-child(3):before {
+.social-media a:nth-child(3):before {
     content: url(../Icons/Icons/twitter.svg);
     background-color: $header-colour;
 }
@@ -226,7 +226,7 @@ header {
     display: block;
     position: absolute;
     top: 3.5rem;
-    margin: .5rem;
+    
 }
 
 // =================
@@ -238,6 +238,8 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.8rem;
+    margin: .5rem;
+    
 }
 
 .photo-grid {
@@ -400,9 +402,11 @@ header {
 // footer
 // =================
 footer {
+    display: block;
     background-color: $Deep-blue;
     color: $HLT;
     padding: .5rem;
+    
 
     & p {
         margin: 0;
