@@ -164,21 +164,10 @@ header {
         svg {
             width: 30px;
             height: 30px;
-            // transition: fill 1s;
+            
         }
     }
 
-
-    @keyframes wipe-in-down {
-        from {
-            clip-path: inset(0 0 100% 0);
-        }
-
-        to {
-            clip-path: inset(0 0 0 0);
-
-        }
-    }
 }
 
 .social-media a {
@@ -189,17 +178,18 @@ header {
 .social-media a::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    width: 65%;
     height: 0;
     overflow: hidden;
-    // border-top: 3px solid red;
     transition: .5s ease-in-out;
-
-    text-align: center;
-    line-height: 20px;
-    fill: gray;
+    
+    // text-align: center;
+    line-height: 30px;
+    background-size: 30px 30px;
+    
 }
 
 .social-media a:hover::before {
@@ -208,24 +198,23 @@ header {
 
 .social-media a:nth-child(1):before {
     content: url(../Icons/Icons/facebook-f.svg);
-
+    width: 41%;
+    left: 14px;
+    background-color: $header-colour;
     
-    // width: 30px;
-    // height: 30px;
 }
 
 .social-media .google:nth-child(2):before {
     content: url(../Icons/Icons/google.svg);
-    
-    // width: 30px;
-    // height: 30px;
+    width: 64%;
+    left: 8.5px;
+    top: 7.75px;
+    background-color: $header-colour;
 }
 
 .social-media .twitter:nth-child(3):before {
     content: url(../Icons/Icons/twitter.svg);
-
-    // width: 30px;
-    // height: 30px;
+    background-color: $header-colour;
 }
 
 
