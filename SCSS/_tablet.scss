@@ -32,6 +32,7 @@
         width: 100%;
         height: 9.204rem;
         object-fit: cover;
+        position: relative;
     }
 
     figcaption {
@@ -206,21 +207,19 @@
         grid-template-rows: auto;
     }
 
-    
-
     .mussel-text {
-        top: 14.3rem;
-        padding: 0.5rem 13.15rem 0.5rem 0.5rem;
+        top: 24.7%;
+        padding: 2% 1%;
     }
 
     .salad-text {
-        top: 24.49rem;
-        padding: 0.5rem 15.5rem 0.5rem 0.5rem;
+        top: 43.3%;
+        padding: 2% 1%;
     }
 
     .pancake-text {
-        top: 34.4rem;
-        padding: 0.5rem 13.4rem 0.5rem 0.5rem;
+        top: 61.5%;
+        padding: 2% 1%;
     }
 
 // recipes
@@ -338,3 +337,5 @@
 
 }
 
+// note to self: make the images responsive/grow so that the titles with the transparent backgrounds are responsive too
+// find a way to make the images the same size despite different original dimensions
