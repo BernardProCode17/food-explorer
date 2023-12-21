@@ -226,7 +226,6 @@ header {
 }
 
 .photo-grid figure {
-  max-width: 41.875rem;
   height: 20rem;
   margin: 0 auto;
   position: relative;
