@@ -6,6 +6,7 @@ body {
     color: #005991;
     font-family: "Roboto Condensed", sans-serif;
     margin-left: 1.5rem;
+    display: flex;
   }
   h2 {
     font-family: "Roboto Condensed", sans-serif;
@@ -43,6 +44,27 @@ body {
     max-width: fit-content;
     background-color: #DEDEDE;
     color: #000;
+    position: relative;
+  }
+  body .search input {
+    width: 8.5rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    position: absolute;
+    background-color: #DEDEDE;
+    top: 0.1%;
+    right: 1rem;
+  }
+  body .search button {
+    position: absolute;
+    top: 0.3%;
+    right: 4%;
+    background-color: #DEDEDE;
+    border: none;
+  }
+  body .search button svg {
+    fill: #005991;
+    transform: scaleX(-1);
   }
   .articles {
     order: 4;
@@ -111,26 +133,10 @@ body {
     padding: 0.5rem 1.5rem;
     margin: 0;
     width: 95%;
-    justify-content: center;
+    justify-content: space-between;
   }
   .nav-link a {
     color: #F9F9F9;
-  }
-  #search {
-    width: 8.5rem;
-    height: 2rem;
-    border-radius: 0.625rem;
-    position: absolute;
-    top: 1.5rem;
-    right: 0.313rem;
-    background-color: #DEDEDE;
-  }
-  .search button {
-    position: absolute;
-    top: 1.8rem;
-    right: 10px;
-    background-color: #DEDEDE;
-    border: none;
   }
   .photo-grid {
     background-color: #DEDEDE;
@@ -146,7 +152,7 @@ body {
   }
   .photo-grid figure {
     position: relative;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
     height: 12rem;
   }
   .photo-grid figure figcaption {
@@ -180,6 +186,7 @@ body {
     width: 94%;
     align-items: center;
     column-gap: 1rem;
+    justify-items: start;
   }
   .sidebar-recipes img {
     border: solid 1px #005991;
@@ -194,6 +201,8 @@ body {
   }
   .sidebar-link {
     order: 3;
+    background-color: #d7d4d4;
+    margin: 1rem 1rem 0 1rem;
   }
   .sidebar-link h2 {
     background-color: #1A71A9;
@@ -243,11 +252,38 @@ body {
   }
 }
 @media (min-width: 41.875em) {
+  p,
+  a {
+    font-size: 1.25rem;
+  }
+  body {
+    position: relative;
+  }
+  body .social-media {
+    display: block;
+    position: absolute;
+    top: 0.5%;
+    right: 3%;
+  }
+  body .social-media svg {
+    fill: #005991;
+  }
+  body .social-media img {
+    transform: scale(2.5rem);
+  }
+  body .search button {
+    right: 15%;
+    top: 0.4%;
+  }
+  body .search input {
+    right: 14%;
+  }
   .photo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    margin: 1rem 1rem 0 1rem;
   }
   .photo-grid figure {
     margin: 0;

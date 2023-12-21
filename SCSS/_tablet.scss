@@ -6,7 +6,9 @@
     h1 {
         color: $Deep-blue;
         font-family: $Heading-text;
-        margin-left: 1.5rem;  
+        margin-left: 1.5rem; 
+        display: flex;
+        
     }
 
     h2 {
@@ -55,14 +57,36 @@
         max-width: fit-content;
         background-color: $search-box;
         color: $body-colour;
-        // display: grid;
-        // grid-template-areas: 
-        // "header"
-        // "photo-grid"
-        // "articles"
-        // "recipes"
-        // "cuisines" 
-        // "footer"   ;
+
+        position: relative;
+
+        .search input {
+            width: 8.5rem;
+            height: 2rem;
+            border-radius: 0.4rem;
+            position: absolute;
+            background-color: $search-box;
+            top: 0.1%;
+            right: 1rem;
+
+            
+        }
+
+        
+        .search button {
+            position: absolute;
+            top:0.3%;
+            right: 4%;
+            background-color: $search-box;
+            border: none;
+            
+        }
+
+        .search button svg {
+            fill: $Deep-blue;
+            transform: scaleX(-1);
+        }
+
     }
 
     
@@ -142,6 +166,7 @@
         list-style-type: none;
         background-color: $Deep-blue;
         padding: 0;
+        
     }
 
     .social-media {
@@ -156,30 +181,17 @@
         padding: 0.5rem 1.5rem;
         margin: 0;
         width: 95%;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .nav-link a {
         color: $header-colour;
     }
 
-    #search {
-        width: 8.5rem;
-        height: 2rem;
-        border-radius: 0.625rem;
-        position: absolute;
-        top: 1.5rem;
-        right: 0.313rem;
-        background-color: $search-box;
-    }
 
-    .search button {
-        position: absolute;
-        top: 1.8rem;
-        right: 10px;
-        background-color: $search-box;
-        border: none;
-    }
+    
+
+
 
     // main
     // photo gallery
@@ -203,7 +215,7 @@
 
     .photo-grid figure {
         position: relative;
-        margin: 1rem;
+        margin: 1rem 1rem 0 1rem;
         height: 12rem;
         
     figcaption {
@@ -244,6 +256,7 @@
         width: 94%;
         align-items: center;
         column-gap: 1rem;
+        justify-items: start;
     }
 
     .sidebar-recipes img {
@@ -265,7 +278,10 @@
     // cuisine types
 
     .sidebar-link {
-        order:3;
+        order: 3;
+        background-color: #d7d4d4;
+        margin: 1rem 1rem 0 1rem;
+
     }
 
     .sidebar-link h2 {
@@ -330,11 +346,50 @@
 
 @media(min-width: 41.875em) {
 
+    p,
+    a {
+        font-size: 1.25rem;
+    }
+
+
+    body {
+        position: relative;
+
+        .social-media {
+            display: block;
+            position: absolute;
+            top: 0.5%;
+            right: 3%;
+      
+        }
+    
+        .social-media svg{
+            fill: $Deep-blue
+
+        }
+
+        .social-media img {
+            transform: scale(2.5rem);
+        }
+
+        .search button {
+            right: 15%;
+            top: 0.4%
+        }
+
+        .search input {
+            right: 14%;
+        }
+    }
+
+    
+
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
+        margin: 1rem 1rem 0 1rem;
 
         figure {
             margin: 0;
