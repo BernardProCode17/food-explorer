@@ -56,6 +56,7 @@
         max-width: fit-content;
         background-color: $search-box;
         color: $body-colour;
+        background-image: url(../Images/bg.jpg);
 
         position: relative;
 
@@ -68,7 +69,7 @@
             top: 0.1%;
             right: 1rem;
             right: 3%;
-            box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0 0 3px $light-blue;
             border: thin;
             padding-left: 0.5rem;
             text-transform: capitalize;
@@ -104,6 +105,7 @@
         margin: 0;
         padding-left: 1rem;
         padding-bottom: 1rem;
+        margin-top: 0.5rem;
     }
 
     .articles h2,
@@ -113,8 +115,10 @@
     }
 
 
-    .sidebar-recipes {
-        order: 2
+
+
+    .sidebar {
+        order: 2;
     }
 
 
@@ -143,11 +147,11 @@
         text-decoration: underline;
     }
 
-    .food-text {
+    .logo-food {
         text-transform: uppercase;
     }
 
-    .explorer-text {
+    .logo-explorer {
         text-transform: uppercase;
         font-weight: lighter;
     }
@@ -203,11 +207,12 @@
     // photo gallery
 
     .photo-grid {
-        background-color: $search-box;
         position: relative;
         display: flex;
         flex-direction: column;
         order: 1;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
         
         
     }
@@ -221,8 +226,11 @@
 
     .photo-grid figure {
         position: relative;
-        margin: 1rem 1rem 0 1rem;
         height: 12rem;
+        margin: 0.3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+
         
     figcaption {
         position: absolute;
@@ -249,10 +257,7 @@
         margin-bottom: 0;
         margin-left: 1rem;
         margin-right: 1rem;
-    }
-
-    .sidebar-recipes h3 {
-        margin-left: 1rem;
+        margin-top: 0;
     }
 
     .sidebar-recipes-grid article {
@@ -260,7 +265,6 @@
         grid-template-columns: 20% 80%;
         margin-left: 1rem;
         align-items: center;
-        column-gap: 1rem;
         justify-items: start;
         margin-right: 1rem;
     }
@@ -268,7 +272,7 @@
     .sidebar-recipes img {
         border: solid 1px $Deep-blue;
         height: auto;
-        margin: 1rem;
+        margin: 1rem 0 1rem 1rem;
         
     }
 
@@ -277,7 +281,7 @@
     }
 
     .sidebar-recipes-grid a:nth-of-type(even) article{
-        background-color: #d7d4d4;
+        background-color: lightgray;
     }
 
 
@@ -285,8 +289,8 @@
 
     .sidebar-link {
         order: 3;
-        background-color: #d7d4d4;
-        margin: 1rem 1rem 0 1rem;
+        background-color: #fff;
+        margin: 0.5rem 1rem 0 1rem;
 
     }
 
@@ -296,17 +300,20 @@
         padding-left: 0.5rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        width: 94%;
+        margin-top: 0;
         text-transform: uppercase;
-        margin-left: 1rem;
+       
     }
 
     .sidebar-link ul {
         list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 9rem);
         gap: 1rem;
         padding-left: 0.5rem;
+        padding-bottom: 1rem;
+        margin: 0;
+        
     }
 
     // blog articles
@@ -317,6 +324,8 @@
         flex-wrap: wrap;
         justify-content: end;
         padding-right: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
     article button {
         background-color: $Deep-blue;
@@ -420,6 +429,10 @@
     .pancake {
         grid-row: 2 / 3;
         grid-column: 2 / 3;
+    }
+
+    .sidebar-recipes h2 {
+        margin-top: 0.5rem;
     }
 
 }
