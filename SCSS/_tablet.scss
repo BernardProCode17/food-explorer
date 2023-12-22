@@ -8,7 +8,6 @@
         font-family: $Heading-text;
         margin-left: 1.5rem; 
         display: flex;
-        
     }
 
     h2 {
@@ -239,10 +238,10 @@
         padding-left: 0.5rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        width: 94%;
         text-transform: uppercase;
         margin-bottom: 0;
         margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .sidebar-recipes h3 {
@@ -253,10 +252,10 @@
         display: grid;
         grid-template-columns: 20% 80%;
         margin-left: 1rem;
-        width: 94%;
         align-items: center;
         column-gap: 1rem;
         justify-items: start;
+        margin-right: 1rem;
     }
 
     .sidebar-recipes img {
@@ -379,6 +378,7 @@
 
         .search input {
             right: 14%;
+           
         }
     }
 
