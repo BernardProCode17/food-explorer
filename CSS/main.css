@@ -54,13 +54,19 @@ body {
     background-color: #DEDEDE;
     top: 0.1%;
     right: 1rem;
+    right: 3%;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    border: thin;
+    padding-left: 0.5rem;
+    text-transform: capitalize;
   }
   body .search button {
     position: absolute;
-    top: 0.3%;
+    top: 0.4%;
     right: 4%;
     background-color: #DEDEDE;
     border: none;
+    background: transparent;
   }
   body .search button svg {
     fill: #005991;
@@ -94,9 +100,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
   }
   footer a {
     color: #FFFFFF;
+    text-decoration: underline;
   }
   .food-text {
     text-transform: uppercase;
@@ -262,21 +271,24 @@ body {
   body .social-media {
     display: block;
     position: absolute;
-    top: 0.5%;
+    top: 0.4%;
     right: 3%;
   }
   body .social-media svg {
     fill: #005991;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0.15rem;
   }
   body .social-media img {
     transform: scale(2.5rem);
   }
   body .search button {
-    right: 15%;
+    right: 16%;
     top: 0.4%;
   }
   body .search input {
-    right: 14%;
+    right: 16%;
   }
   .photo-grid {
     display: grid;

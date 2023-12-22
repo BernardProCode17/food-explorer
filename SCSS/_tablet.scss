@@ -67,17 +67,21 @@
             background-color: $search-box;
             top: 0.1%;
             right: 1rem;
-
-            
+            right: 3%;
+            box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+            border: thin;
+            padding-left: 0.5rem;
+            text-transform: capitalize;
         }
 
         
         .search button {
             position: absolute;
-            top:0.3%;
+            top:0.4%;
             right: 4%;
             background-color: $search-box;
             border: none;
+            background: transparent;
             
         }
 
@@ -130,10 +134,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
     }
 
     footer a {
         color: $HLT;
+        text-decoration: underline;
     }
 
     .food-text {
@@ -357,13 +364,16 @@
         .social-media {
             display: block;
             position: absolute;
-            top: 0.5%;
+            top: 0.4%;
             right: 3%;
       
         }
     
         .social-media svg{
-            fill: $Deep-blue
+            fill: $Deep-blue;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin: 0.15rem;
 
         }
 
@@ -372,16 +382,16 @@
         }
 
         .search button {
-            right: 15%;
+            right: 16%;
             top: 0.4%
         }
 
         .search input {
-            right: 14%;
-           
+            right: 16%;
         }
-    }
 
+
+    }
     
 
     .photo-grid {
