@@ -32,14 +32,38 @@
          <!-- maybe we can use the h1 instead of the img, because their is no h1 in the picture, and the logo is an image not a title -->
          <!-- styles the h1 to look like the logo -->
          <!-- <img src="Images/logo.png" alt="image of logo that say"> -->
+
+         <h1><span class="logo-food">FOOD</span> <span class="logo-explorer">EXPLORER</span></h1>
+        
+
+         <!-- mobile heaader -->
+         <div class="navigation">
+            <img src="Images/small-logo.jpg" alt="picture of the restaurant logo with the letter 'FE'" width="55px"
+               height="35px">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+               <path
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+         </div>
+
+
+      </section>
+
+      <nav aria-label="header Navigation" class="nav-bar">
+         <div class="search">
+            <input type="search" name="#" id="search" placeholder="search">
+            <!-- position the button over the search box -->
+            <button aria-label="search box submit button">
+               <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+
          <h1><span class="logo-food">Food</span> <span class="logo-explorer">Explorer</span></h1>
 
          <!-- mobile heaader -->
 
-         <div class="navigation" >
+         /* <div class="navigation" >
             <img src="Images/small-logo.jpg" alt="picture of the restaurant logo with the letter 'FE'" width="55px" height="35px">
             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-         </div>
+         </div> */
 
       </section>
 
@@ -51,6 +75,7 @@
             <button aria-label="search box submit button" id="search-btn">
 
                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+
                   <path
                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                </svg>
@@ -58,14 +83,16 @@
          </div>
 
 
-            <ul class="nav-link">
-               <li><a href="Index.html">Home</a></li>
-               <li><a href="About.html">About</a></li>
-               <li><a href="Review.html">Review</a></li>
-               <li><a href="Recipes.html">Recipes</a></li>
-               <li><a href="Contact.html">Contact</a></li>
-            </ul>
+         <ul class="nav-link">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Review.html">Reviews</a></li>
+            <li><a href="Recipes.html">Recipes</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+         </ul>
+
    
+
          <div class="social-media">
             <!-- You can change the colour of the svg -->
             <a href="https://www.facebook.com" aria-label="facebook pages link">
@@ -101,7 +128,10 @@
    </header>
 
 
+
    <main class="site-wrapper">
+
+      
 
       <section class="photo-grid">
          <!-- Add hover translation animation to make the images zoom in when hoverd over -->
@@ -111,7 +141,8 @@
          </figure>
 
          <figure class="figure-2">
-            <img  src="Images/salad.jpg" alt="photo of a bowl of potato and vegetable salad" width="350px"
+
+            <img src="Images/salad.jpg" alt="photo of a bowl of potato and vegetable salad" width="350px"
                height="240px">
             <figcaption class="salad-text">Lorem ipsum dolor</figcaption>
          </figure>
@@ -119,119 +150,115 @@
          <figure class="figure-3">
             <img src="Images/pancake.jpg" alt="photo of a dish with 3 pancakes stack with melted butter" width="350px"
                height="240px">
-               <figcaption class="pancake-text">Sit amet consectetur</figcaption>
-         </figure>
+               <figcaption>Lorem ipsum dolor</figcaption>
+            </figure>
 
       </section>
 
+      <section class="articles">
 
-   
+         <article>
+
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Posted by Mike Lee on Sunday, August 25, 2013</p>
+            
+            <img src="Images/pasta.jpg" alt="photo of a bowl with shrimp and pasta at a restaurant" width="664px"
+               height="191px">
+            <p class="article-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat at quod earum neque pariatur, expedita eveniet culpa veritatis.</p>
+
+            <button>Read More...</button>
+
+         </article>
+
+         <article>
+
+            <h2>Vel, Eaque Quisquam Sit Amet</h2>
+            <p>Posted by Mike Lee on Monday, July 29, 2013</p>
+
+            <img src="Images/ramen.jpg" alt="photo of a bowl of raman at a restaurant" width="664px" height="191px">
+            <p class="article-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat at quod earum neque pariatur, expedita eveniet culpa veritatis.</p>
+
+            <button>Read More...</button>
 
 
+         </article>
 
-         <section class="articles">
+      </section>
 
-            <article>
+      <button class="post-btn">
+         <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" aria-hidden="true"
+            focuable="false">
+            <path
+               d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z" />
+         </svg>
+         Older Posts</button>
+  
 
-               <h2>Lorem ipsum dolor sit amet</h2>
-               <p>Posted by Mike Lee on Sunday, August 25, 2013</p>
+   <div class="sidebar">
 
-               <img src="Images/pasta.jpg" alt="photo of a bowl with shrimp and pasta at a restaurant" width="664px"
-                  height="191px">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam possimus earum ut voluptatum
-                  repellendus.</p>
+   <aside class="sidebar-recipes">
 
-               <button>Read More...</button>
+      <h2>Latest Recipes</h2>
 
-            </article>
+      <a href="#" aria-label="link to Met consectetur elit dish details">
+         <article>
+            <img src="Images/lamb-tb.jpg" alt="photo of dish at a restaurant" width="64px" height="64px">
+            <h3>Met consec tetur elit</h3>
+         </article>
+      </a>
 
-            <article>
+      <a href="#" aria-label="link to Archi Tecto Dolores dish details">
+         <article class="gray">
+            <img src="Images/breakfast-tb.jpg" alt="photo of a dish with breakfast food" width="64px" height="64px">
+            <h3>Archi Tecto Dolores</h3>
+         </article>
+      </a>
 
-               <h2>Vel, Eaque Quisquam Sit Amet</h2>
-               <p>Posted by Mike Less on Sunday, August 25, 2013</p>
+      <a href="#" aria-label="link to Mexpe Ditciatis dish details">
+         <article>
+            <img src="Images/calamari-tb.jpg" alt="photo of a dish with pasta and spicy peppers" width="64px"
+               height="64px">
+            <h3>Mexpe Dita ciatis</h3>
+         </article>
+      </a>
 
-               <img src="Images/ramen.jpg" alt="photo of a bowl of raman at a restaurant" width="664px" height="191px">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam possimus earum ut voluptatum
-                  repellendus.</p>
+      <a href="#" aria-label="link to Fugiat Eaque Aore dish details">
+         <article class="gray">
+            <img src="Images/steak-tb.jpg" alt="photo of a steak at a restaurant" width="64px" height="64px">
+            <h3>Fugiat Eaque Aore</h3>
+         </article>
+      </a>
+   </aside>
 
-               <button>Read More...</button>
-            </article>
+   <aside class="sidebar-link">
+      <h2>Cuisines</h2>
+      <nav aria-label="side bar Navigation" class="side-nav">
+         <ul>
+            <li><a href="#">American <small>(95)</small></a></li>
+            <li><a href="#">Asian <small>(33)</small></a></li>
+            <li><a href="#">Cambodian <small>(3)</small></a></li>
+            <li><a href="#">Chinese <small>(281)</small></a></li>
+            <li><a href="#">Filipino <small>(8)</small></a></li>
+            <li><a href="#">French <small>(40)</small></a></li>
+            <li><a href="#">German <small>(7)</small></a></li>
+            <li><a href="#">Greek <small>(29)</small></a></li>
+            <li><a href="#">Indian <small>(44)</small></a></li>
+            <li><a href="#">Italian <small>(60)</small></a></li>
+            <li><a href="#">Jamaican <small>(7)</small></a></li>
+            <li><a href="#">Japanese <small>(202)</small></a></li>
+            <li><a href="#">Korea <small>(120)</small></a></li>
+            <li><a href="#">Malaysian <small>(12)</small></a></li>
+            <li><a href="#">Mediterranean <small>(9)</small></a></li>
+            <li><a href="#">Mexican <small>(25)</small></a></li>
+            <li><a href="#">Southern <small>(14)</small></a></li>
 
-         </section>
+         </ul>
+         
+      </nav>
+   </aside>
+</div>
 
-         <button class="post-btn">
-            <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" aria-hidden="true"
-               focuable="false">
-               <path
-                  d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z" />
-            </svg>
-            Older Posts</button>
-
-         <div class="sidebar">
-
-            <aside class="sidebar-recipes">
-
-               <h2>Latest Recipes</h2>
-
-               <a href="#" aria-label="link to Met consectetur elit dish details">
-                  <article>
-                     <img src="Images/lamb-tb.jpg" alt="photo of dish at a restaurant" width="64px" height="64px">
-                     <h3>Met consectetur elit</h3>
-                  </article>
-               </a>
-
-               <a href="#" aria-label="link to Archi Tecto Dolores dish details">
-                  <article class="gray">
-                     <img src="Images/breakfast-tb.jpg" alt="photo of a dish with breakfast food" width="64px"
-                        height="64px">
-                     <h3>Archi Tecto Dolores</h3>
-                  </article>
-               </a>
-
-               <a href="#" aria-label="link to Mexpe Ditciatis dish details">
-                  <article>
-                     <img src="Images/calamari-tb.jpg" alt="photo of a dish with pasta and spicy peppers" width="64px"
-                        height="64px">
-                     <h3>Mexpe Ditciatis</h3>
-                  </article>
-               </a>
-
-               <a href="#" aria-label="link to Fugiat Eaque Aore dish details">
-                  <article class="gray">
-                     <img src="Images/steak-tb.jpg" alt="photo of a steak at a restaurant" width="64px" height="64px">
-                     <h3>Fugiat Eaque Aore</h3>
-                  </article>
-               </a>
-            </aside>
-
-            <aside class="sidebar-link">
-               <h2>Cuisines</h2>
-               <nav aria-label="side bar Navigation" class="side-nav">
-                  <ul>
-                     <li><a href="#">American <small>(95)</small></a></li>
-                     <li><a href="#">Asian <small>(33)</small></a></li>
-                     <li><a href="#">Cambodian <small>(3)</small></a></li>
-                     <li><a href="#">Chinese <small>(281)</small></a></li>
-                     <li><a href="#">Filipino <small>(8)</small></a></li>
-                     <li><a href="#">French <small>(40)</small></a></li>
-                     <li><a href="#">German <small>(7)</small></a></li>
-                     <li><a href="#">Greek <small>(29)</small></a></li>
-                     <li><a href="#">Indian <small>(44)</small></a></li>
-                     <li><a href="#">Italian <small>(60)</small></a></li>
-                     <li><a href="#">Jamaican <small>(7)</small></a></li>
-                     <li><a href="#">Japanese <small>(202)</small></a></li>
-                     <li><a href="#">Korea <small>(120)</small></a></li>
-                     <li><a href="#">Malaysian <small>(12)</small></a></li>
-                     <li><a href="#">Mediterranean <small>(9)</small></a></li>
-                     <li><a href="#">Mexican <small>(25)</small></a></li>
-                     <li><a href="#">Southern <small>(14)</small></a></li>
-               </ul>
-               </nav>
-            </aside>
-           
-         </div>
-      </main>
-
+</main>
       <footer class="footer">
          <p>&copy 2023 Site Design by ProjectTeam 3. For Educational purpose only. Image Credit</p>
          <a href="#top" aria-label="link back to top of page">Top</a>
