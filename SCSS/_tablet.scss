@@ -260,27 +260,30 @@
         margin-top: 0;
     }
 
-    .sidebar-recipes-grid article {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        margin-left: 1rem;
+    .sidebar-recipes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-recipes article {
+        display: flex;
         align-items: center;
-        justify-items: start;
+        margin-left: 1rem;
         margin-right: 1rem;
     }
 
     .sidebar-recipes img {
         border: solid 1px $Deep-blue;
         height: auto;
-        margin: 1rem 0 1rem 1rem;
+        margin: 1rem 0.5rem 1rem 1rem;
         
     }
 
-    .sidebar-recipes-grid a:nth-of-type(odd) article{
+    .sidebar-recipes a:nth-of-type(odd) article{
         background-color: $HLT;
     }
 
-    .sidebar-recipes-grid a:nth-of-type(even) article{
+    .sidebar-recipes a:nth-of-type(even) article{
         background-color: lightgray;
     }
 
