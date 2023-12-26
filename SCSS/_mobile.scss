@@ -1,0 +1,430 @@
+@use 'variables' as *;
+// mobile style
+
+body {
+    background-image: url(../Images/bg.jpg);
+    font-family: $Body-text;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $body-colour;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+}
+
+figcaption {
+    text-transform: uppercase;
+}
+
+article {
+    background-color: $header-colour;
+    color: $body-colour;
+    padding: .5rem;
+}
+
+button {
+    border: 0px;
+    background-color: $light-blue;
+    color: $HLT;
+    text-transform: uppercase;
+    padding: .3rem;
+}
+
+svg {
+    fill: $Deep-blue;
+}
+
+input {
+    padding: .5rem;
+}
+
+// =================
+// header
+// =================
+h1 {
+    display: none;
+
+}
+
+header {
+    padding: .5rem;
+    margin: 0 auto;
+    display: block;
+   
+    background-color: $header-colour;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    svg {
+        height: 35px;
+        width: 30px;
+        padding: .2rem;
+    }
+}
+
+@media (min-width: 330px) {
+
+    .navigation {
+        img {
+            content: url(../Images/logo.png);
+            width: 250px;
+        }
+    }
+}
+
+// =================
+// navigation link
+// =================
+#navigation-menu {
+    display: none;
+}
+
+.nav-link {
+
+    // z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: .2rem auto;
+    width: 100%;
+
+    & li {
+        font-family: $Nav-text;
+        text-align: center;
+
+        padding: 0;
+        width: 100%;
+    }
+
+    & a {
+        display: block;
+        background-color: $light-blue;
+        border: 1px solid $Deep-blue;
+        color: $HLT;
+        text-decoration: none;
+        padding: .5rem;
+
+    }
+
+    & li a:hover {
+        background-color: $header-colour;
+        color: $light-blue;
+    }
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: .5rem auto;
+    
+}
+
+#search {
+    width: 100%;
+    border: 0px;
+    background-color: rgb(222, 222, 222);
+    box-shadow: inset 0px 0px 3px $light-blue;
+    text-transform: capitalize;
+}
+
+#search-btn {
+    position: absolute;
+    right: .4rem;
+    background-color: transparent;
+    transform: scaleX(-1);
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    a {
+
+        padding: .5rem;
+
+        svg {
+            width: 30px;
+            height: 30px;
+            
+        }
+    }
+
+}
+
+.social-media a {
+    position: relative;
+
+}
+
+.social-media a::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    width: 65%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    
+    // text-align: center;
+    line-height: 30px;
+    background-size: 30px 30px;
+    
+}
+
+.social-media a:hover::before {
+    height: 100%;
+}
+
+.social-media a:nth-child(1):before {
+    content: url(../Icons/Icons/facebook-f.svg);
+    width: 41%;
+    left: 14px;
+    background-color: $header-colour;
+    
+}
+
+.social-media a:nth-child(2):before {
+    content: url(../Icons/Icons/google.svg);
+    width: 64%;
+    left: 8.5px;
+    top: 7.75px;
+    background-color: $header-colour;
+}
+
+.social-media a:nth-child(3):before {
+    content: url(../Icons/Icons/twitter.svg);
+    background-color: $header-colour;
+}
+
+
+
+// =================
+// site-wrapper 
+// =================
+
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    margin: .5rem;
+    
+}
+
+.photo-grid {
+    order: 1;
+}
+
+.sidebar {
+    order: 2;
+}
+
+.articles {
+    order: 3;
+}
+
+.post-btn {
+    order: 4;
+    text-align: left;
+    background-color: transparent;
+    color: $light-blue;
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+// =================
+// photo-grid
+// =================
+.photo-grid {
+
+    & figure {
+        
+        height: 20rem;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: .5rem;
+
+        z-index: -1000;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        & figcaption {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.54);
+            color: $HLT;
+            font-size: 2rem;
+            width: 100%;
+            padding: .5rem;
+        }
+    }
+}
+
+// =================
+// articles
+// =================
+
+.articles {
+
+
+    & h2 {
+        color: $light-blue;
+        font-size: 2rem;
+        margin: .5rem 0 0;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    & article {
+        margin: 0 0 0.8rem 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+    & p {
+        margin: 0.2rem auto 1.2rem;
+        width: 100%;
+    }
+
+
+
+}
+
+// =================
+// aside
+// =================
+.sidebar {
+    background-color: $header-colour;
+
+    & h2 {
+        background-color: $light-blue;
+        color: $HLT;
+        padding: .5rem;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+
+    & h3 {
+        color: $body-colour;
+        font-weight: 300;
+    }
+
+    & article {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1.5rem;
+        padding: .7rem;
+
+        & img {
+            border: 2px solid $light-blue;
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $body-colour;
+    }
+
+    .gray {
+        background-color: rgb(234, 234, 234);
+    }
+}
+
+.sidebar-link {
+    height: fit-content;
+    display: block;
+
+
+}
+
+.side-nav {
+
+    ul,li {
+        list-style: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   
+
+    li {
+        flex-basis: 50%;
+    }
+
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // gap: .5rem;
+    padding: .5rem;
+    color: $body-colour;
+    font-weight: 300;
+    font-size: 1rem;
+
+    a {
+        text-transform: capitalize;
+    }
+
+    & a:visited {
+        color: $body-colour;
+    }
+}
+
+
+
+// =================
+// footer
+// =================
+footer {
+    display: block;
+    background-color: $Deep-blue;
+    color: $HLT;
+    padding: .5rem;
+    
+
+    & p {
+        margin: 0;
+    }
+
+    & a {
+        display: none;
+    }
+}
