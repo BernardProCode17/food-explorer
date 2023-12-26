@@ -32,18 +32,14 @@
          <!-- maybe we can use the h1 instead of the img, because their is no h1 in the picture, and the logo is an image not a title -->
          <!-- styles the h1 to look like the logo -->
          <!-- <img src="Images/logo.png" alt="image of logo that say"> -->
-         <h1><span>Food</span> <span>Explorer</span></h1>
+         <h1><span class="logo-food">Food</span> <span class="logo-explorer">Explorer</span></h1>
 
          <!-- mobile heaader -->
-         <div class="navigation">
-            <img src="Images/small-logo.jpg" alt="picture of the restaurant logo with the letter 'FE'" width="55px"
-               height="35px">
-            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" id="menu-toggle">
-               <path
-                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-            </svg>
-         </div>
 
+         <div class="navigation" >
+            <img src="Images/small-logo.jpg" alt="picture of the restaurant logo with the letter 'FE'" width="55px" height="35px">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+         </div>
 
       </section>
 
@@ -51,7 +47,9 @@
          <div class="search">
             <input type="search" name="#" id="search" placeholder="search">
             <!-- position the button over the search box -->
+
             <button aria-label="search box submit button" id="search-btn">
+
                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                   <path
                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
@@ -59,13 +57,15 @@
             </button>
          </div>
 
-         <ul class="nav-link">
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Review.html">Review</a></li>
-            <li><a href="Recipes.html">Recipes</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-         </ul>
+
+            <ul class="nav-link">
+               <li><a href="Index.html">Home</a></li>
+               <li><a href="About.html">About</a></li>
+               <li><a href="Review.html">Review</a></li>
+               <li><a href="Recipes.html">Recipes</a></li>
+               <li><a href="Contact.html">Contact</a></li>
+            </ul>
+   
          <div class="social-media">
             <!-- You can change the colour of the svg -->
             <a href="https://www.facebook.com" aria-label="facebook pages link">
@@ -101,32 +101,33 @@
    </header>
 
 
-      <main class="site-wrapper">
+   <main class="site-wrapper">
 
-    
-         <section class="photo-grid">
-            <!-- Add hover translation animation to make the images zoom in when hoverd over -->
-            <figure class="figure-1">
-               <!-- <img src="Images/mussel.jpg" alt="photo of a bowl of mussel at a restaurant" width="704px" height="240px"> -->
-               <img src="Images/mussel.jpg" alt="photo of a bowl of mussel at a restaurant">
-               <figcaption>Lorem ipsum dolor sit</figcaption>
-            </figure>
+      <section class="photo-grid">
+         <!-- Add hover translation animation to make the images zoom in when hoverd over -->
+         <figure class="figure-1">
+            <img src="Images/mussel.jpg" alt="photo of a bowl of mussel at a restaurant" width="704px" height="240px">
+            <figcaption class="mussel-text">Lorem ipsum dolor sit</figcaption>
+         </figure>
 
-            <figure class="figure-2">
-               <!-- <img src="Images/salad.jpg" alt="photo of a bowl of potato and vegetable salad" width="350px"
-               height="240px"> -->
-               <img src="Images/salad.jpg" alt="photo of a bowl of potato and vegetable salad">
-               <figcaption>Lorem ipsum dolor</figcaption>
-            </figure>
+         <figure class="figure-2">
+            <img  src="Images/salad.jpg" alt="photo of a bowl of potato and vegetable salad" width="350px"
+               height="240px">
+            <figcaption class="salad-text">Lorem ipsum dolor</figcaption>
+         </figure>
 
-            <figure class="figure-3">
-               <!-- <img src="Images/pancake.jpg" alt="photo of a dish with 3 pancakes stack with melted butter" width="350px"
-               height="240px"> -->
-               <img src="Images/pancake.jpg" alt="photo of a dish with 3 pancakes stack with melted butter">
-               <figcaption>Lorem ipsum dolor</figcaption>
-            </figure>
+         <figure class="figure-3">
+            <img src="Images/pancake.jpg" alt="photo of a dish with 3 pancakes stack with melted butter" width="350px"
+               height="240px">
+               <figcaption class="pancake-text">Sit amet consectetur</figcaption>
+         </figure>
 
-         </section>
+      </section>
+
+
+   
+
+
 
          <section class="articles">
 
@@ -237,18 +238,5 @@
       </footer>
       
 </body>
-
-
 </html>
 
-
-<!-- ***** Hey Check out the notes I left you***** -->
-<!-- // I changed the max-with to 320px in the normalize_reset.css file
-// Because it's not alined in the center of the page and it doesn't start from 320px
-//As well the background image should fill 100% of the 320px width
-// when I changed the max-with to 320px in the normalize_reset.css file the background image filled the 100% of the screen and not the 320px width.
-//I had a similar thing with it as well in one of my projects. Maybe try it on the main or site wrapper.
-
-// if not we can try fix it together when we meet on thursday.
-
-//Other than that you just need to bring the header forward with the z-index. I tried it but I didn't want to go throught your code as you know it best and where to fix it.  -->
