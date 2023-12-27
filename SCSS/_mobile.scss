@@ -87,7 +87,7 @@ header {
 // =================
 // navigation link
 // =================
-#navigation-menu {
+.nav-bar {
     display: none;
 }
 
@@ -133,6 +133,15 @@ header {
     
 }
 
+.search button {
+    position: absolute;
+    background-color: transparent;
+    position: absolute;
+    right: .4rem;
+    background-color: transparent;
+    transform: scaleX(-1);
+}
+
 #search {
     width: 100%;
     border: 0px;
@@ -142,10 +151,7 @@ header {
 }
 
 #search-btn {
-    position: absolute;
-    right: .4rem;
-    background-color: transparent;
-    transform: scaleX(-1);
+    
 }
 
 
@@ -327,7 +333,7 @@ header {
 // aside
 // =================
 .sidebar {
-    background-color: $header-colour;
+    
 
     & h2 {
         background-color: $light-blue;
@@ -365,9 +371,15 @@ header {
     }
 }
 
+.sidebar-recipes {
+    background-color: $header-colour;
+    margin-bottom: .5rem;
+}
+
 .sidebar-link {
     height: fit-content;
     display: block;
+    background-color: $header-colour;
 
 
 }
@@ -383,12 +395,14 @@ header {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
+      
     }
 
    
 
     li {
         flex-basis: 50%;
+        padding-bottom: .5rem;
     }
 
     // display: grid;

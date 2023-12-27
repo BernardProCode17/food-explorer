@@ -1,404 +1,423 @@
 @use 'variables' as *;
 
 
-@media (min-width: 770px){
+@media (min-width: 770px) {
 
 
+    header {
+        width: 100%;
+    }
 
-//header
+    //header
 
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    background-color: $Deep-blue;  
-    margin-left: 0; 
-    margin-right: 0; 
-    padding-left: 90px; 
-    padding-right: 90px;  
-    // padding: .5rem 0;
-}
-
-
-#top {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo {
-    background-color: $header-colour;
-}
-
-.logo h1 {
-   display: flex;
-    margin: 0;
-    padding: .5rem 7rem;    
-}
-
-.logo-food {
-    color: $Deep-blue; 
-    font-size: 3rem;
-    font-weight:700;    
-}
-
-.logo-explorer {
-    color: $light-blue; 
-    font-weight: 400; 
-    font-size: 3rem;  
-}
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        background-color: $Deep-blue;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 90px;
+        padding-right: 90px;
+        // padding: .5rem 0;
+        width: 100%;
+        height: 3.5rem;
+    }
 
 
-.navigation {
-    display: none;
-}
+    header {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
+    .logo {
+        background-color: $header-colour;
+    }
 
-.nav-link {   
-   display: flex;   
-    width: 70%;   
-    margin: 0;
-    background-color: $light-blue;
-    height: 100%;
-    padding: 0;
-}
+    .logo h1 {
+        display: flex;
+        margin: 0;
+        padding: .5rem 7rem;
+    }
 
-.nav-link li {
-    display: inline-block;  
-    flex-basis: 100%;  
-    font-size: 1.2rem;    
-    height: 100%;    
-}
-
-.nav-link li a {
-    display: block;
-    padding: 1rem 2.5rem;
-    text-decoration: none;
-    color: white;   
-    height: 100%;    
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: white; 
+    .logo-food {
         color: $Deep-blue;
-      }
-}
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .logo-explorer {
+        color: $light-blue;
+        font-weight: 400;
+        font-size: 3rem;
+    }
 
 
-.search {
-    order: 2;
-    // align-self: flex-end;
-    margin-left: auto;
-    width: 30%;  
-}
-
-#search {
-    position: relative;
-    background-color: $search-box;
-    border: none;
-    height: 100%;
-    width: 100%;    
-    padding-left: 1rem;
-    font-size: 1.2rem;
-    box-shadow: inset 0 0 3px $light-blue;
-}
-
-.search button {
-    position: absolute;
-    right: 6rem;
-    bottom: 0.2rem;   
-    background-color: transparent;
-    border: none;
-}
-.search-svg {     
-    fill: $light-blue;
-    width: 35px;
-    height: 35px;
-    transform: scaleX(-1); 
-}
-
-.social-media {
-    position: absolute;
-    right: 6rem;
-    top: 1rem;
-}
-
-.social-media a {
-    padding: 0 0.5rem;
-    text-decoration: none;
-}
-
-.social-media a svg {
-    fill: $social-icon;
-    width: 1.5rem;
-    height:1.5rem;
-    transition: fill 0.3s ease;
-
-    &:hover {
-        fill: grey; 
-      }
-}
+    .navigation {
+        display: none;
+    }
 
 
+    .nav-link {
+        display: flex;
+        width: 70%;
+        margin: 0;
+        background-color: $light-blue;
+        // height: 100%;
+        padding: 0;
 
-//body 
+        position: absolute;
+        left: 2rem;
+    }
 
-.side-nav li {
-   list-style-type: none;
-}
+    .nav-link li {
+        display: inline-block;
+        flex-basis: 100%;
+        font-size: 1.2rem;
+        height: 100%;
+    }
 
-.side-nav ul {
-    padding: 0;
-    margin: 0;
-}
+    .nav-link li a {
+        display: block;
+        padding: 1rem 2.5rem;
+        text-decoration: none;
+        color: white;
+        // height: 100%;
+        transition: background-color 0.3s ease;
 
-.site-wrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 1020px;  
-    margin: 0 auto;      
-    margin-top: .5rem;    
+        &:hover {
+            background-color: white;
+            color: $Deep-blue;
+        }
+    }
+
+
+    .search {
+        order: 2;
+        // align-self: flex-end;
+        margin-left: auto;
+        width: 30%;
+        position: absolute;
+        top: 5rem;
+        right: 2rem;
+    }
+
+    #search {
+        position: relative;
+        background-color: $search-box;
+        border: none;
+        height: 100%;
+        width: 100%;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+        box-shadow: inset 0 0 3px $light-blue;
+    }
+
+    .search button {
+        position: absolute;
+        right: 0;
+        bottom: 0.2rem;
+        background-color: transparent;
+        border: none;
+    }
     
-}
 
+    .search-svg {
+        fill: $light-blue;
+        width: 35px;
+        height: 35px;
+        transform: scaleX(-1);
+    }
 
-body {
-    color: $body-colour;
-    font-family: $Body-text;
-    background-image: url(../Images/bg.jpg)
-}
+    .social-media {
+        position: absolute;
+        right: 6rem;
+        top: 1rem;
+    }
 
-h2, h3 {
-    font-family: $Heading-text;
-    text-transform: uppercase;    
-    font-weight: 400;
-}
+    .social-media a {
+        padding: 0 0.5rem;
+        text-decoration: none;
+    }
 
+    .social-media a svg {
+        fill: $social-icon;
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: fill 0.3s ease;
 
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;  
-    grid-gap: .5rem;    
-    width: 74%;   
-}
-
-.photo-grid figure {
-    position: relative;
-    margin: 0;
-    padding: 0;
-
-}
-
-.photo-grid figure img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-}
-
-.photo-grid figcaption {
-    color: $HLT;
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;     
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: .5rem;
-    text-transform: uppercase;
-}
-
-.figure-1 {
-    grid-column: span 2;
-}
-
-.figure-2, .figure-3 {
-    grid-row: 2;
-}
+        &:hover {
+            fill: grey;
+        }
+    }
 
 
 
-//Articles
+    //body 
 
-.articles {    
-    align-content: center;    
-    margin: 1rem 0;
-    width: 74%;    
-}
+    .side-nav li {
+        list-style-type: none;
+        padding: 0;
+    }
 
-.articles article img{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 1.5rem;
-}
+    .side-nav ul {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
 
+    .site-wrapper {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 1020px;
+        margin: 0 auto;
+        margin-top: .5rem;
 
-
-.articles article {
-    position: relative;
-    margin: .75rem 0;
-    padding: 1rem;
-    background-color: white;    
-}
-
-.articles article h2 {
-    margin: 1rem 0 0; 
-    color: $light-blue; 
-    font-weight: 500;
-    font-size: 2rem;
-}
-
-.articles article p {
-    margin: 0 0 2rem;    
-}
-
-.articles article button {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;    
-    background-color: $light-blue;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    // margin: .5rem 0;
-    padding: .5rem;
-    font-weight: bold;
-
-}
-
-.article-text {
-    padding-bottom: 1rem;
-}
+    }
 
 
-.post-btn {   
-    display: flex;
-    align-items: center; 
-    color: $Deep-blue;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 2rem 0;
-    font-size: 1.5rem; 
-    background-color: transparent; 
-    border: none;  
-    padding: 0;
-    width: 75%;    
-}
+    body {
+        color: $body-colour;
+        font-family: $Body-text;
+        background-image: url(../Images/bg.jpg)
+    }
 
-
-.btn-svg {
-    fill: $light-blue;
-    height: 30px;
-    width: 30px;   
-    margin-right: .5rem; 
-}
+    h2,
+    h3 {
+        font-family: $Heading-text;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
 
 
 
-//sidebars
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-gap: .5rem;
+        width: 74%;
+    }
 
-.sidebar {    
-    width: 25%;    
-    margin-left: .5rem;
-    position: absolute;
-    right: 0rem;
-}
+    .photo-grid figure {
+        position: relative;
+        margin: 0;
+        padding: 0;
 
-.sidebar-recipes a {
-    text-decoration: none;
-    color: $body-colour;
-}
+    }
 
-a:visited {
-    color: $body-colour;
-}
+    .photo-grid figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
+    .photo-grid figcaption {
+        color: $HLT;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: .5rem;
+        text-transform: uppercase;
+    }
 
-.sidebar-recipes article {
-    background-color: white;
-    display: flex;
-    align-items: center;
-}
+    .figure-1 {
+        grid-column: span 2;
+    }
 
-.sidebar-recipes article img {
-    width: 70px; 
-    height: 70px;
-    border: solid 2px $light-blue;
-    margin: .5rem;     
-}
-
-
-.sidebar-recipes .gray {
-    background-color: lightgray;
-}
-
-
-
-.sidebar-recipes {
-    margin-bottom: 1rem;
-}
-
-
-
-.sidebar-recipes h3 {
-    text-transform: uppercase;     
-    margin: 0 1rem 0 .25rem;
-}
+    .figure-2,
+    .figure-3 {
+        grid-row: 2;
+    }
 
 
 
-.sidebar-recipes h2 {
-    background-color: RGB(26, 113, 169);
-    color: white;
-    margin: 0;
-    padding: 1rem .5rem;
-}
+    //Articles
 
-.sidebar-link h2 {
-    background-color: RGB(26, 113, 169);
-    color: white;
-    margin: 0;
-    padding: 1rem .5rem;
-}
+    .articles {
+        align-content: center;
+        margin: 1rem 0;
+        width: 74%;
+    }
 
-
-.side-nav {
-    background-color: $header-colour;
-    padding: 0;
-}
-
-.side-nav a {
-    display: block;
-    padding: .5rem;
-    text-decoration: none;
-    color: black;
-
-    
-}
+    .articles article img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1.5rem;
+    }
 
 
-.footer {
-   display: flex;
-   align-items: center;
-    max-width: 1200px;
-    background-color: $light-blue;
-    margin: 0 auto;
-    justify-content: center;
-}
 
-.footer p {
-    margin: 0;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
+    .articles article {
+        position: relative;
+        margin: .75rem 0;
+        padding: 1rem;
+        background-color: white;
+    }
 
-.footer-top {
-   padding: 0 .5rem;
-   background-color: $light-blue;
-   color: white;
-}
+    .articles article h2 {
+        margin: 1rem 0 0;
+        color: $light-blue;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .articles article p {
+        margin: 0 0 2rem;
+    }
+
+    .articles article button {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        background-color: $light-blue;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        // margin: .5rem 0;
+        padding: .5rem;
+        font-weight: bold;
+
+    }
+
+    .article-text {
+        padding-bottom: 1rem;
+    }
+
+
+    .post-btn {
+        display: flex;
+        align-items: center;
+        color: $Deep-blue;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 75%;
+    }
+
+
+    .btn-svg {
+        fill: $light-blue;
+        height: 30px;
+        width: 30px;
+        margin-right: .5rem;
+    }
+
+
+
+    //sidebars
+
+
+
+    .sidebar {
+        width: 25%;
+        margin-left: .5rem;
+        position: absolute;
+        right: 0rem;
+    }
+
+    .sidebar-recipes a {
+        text-decoration: none;
+        color: $body-colour;
+    }
+
+    a:visited {
+        color: $body-colour;
+    }
+
+
+    .sidebar-recipes article {
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-recipes article img {
+        width: 70px;
+        height: 70px;
+        border: solid 2px $light-blue;
+        margin: .5rem;
+    }
+
+
+    .sidebar-recipes .gray {
+        background-color: lightgray;
+    }
+
+
+
+    .sidebar-recipes {
+        margin-bottom: 1rem;
+    }
+
+
+
+    .sidebar-recipes h3 {
+        text-transform: uppercase;
+        margin: 0 1rem 0 .25rem;
+    }
+
+
+
+    .sidebar-recipes h2 {
+        background-color: RGB(26, 113, 169);
+        color: white;
+        margin: 0;
+        padding: 1rem .5rem;
+    }
+
+    .sidebar-link h2 {
+        background-color: RGB(26, 113, 169);
+        color: white;
+        margin: 0;
+        padding: 1rem .5rem;
+    }
+
+
+    .side-nav {
+        background-color: $header-colour;
+        padding: 0;
+    }
+
+    .side-nav a {
+        display: block;
+        padding: .5rem;
+        text-decoration: none;
+        color: black;
+
+
+    }
+
+
+    .footer {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        background-color: $light-blue;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .footer p {
+        margin: 0;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+    .footer-top {
+        padding: 0 .5rem;
+        background-color: $light-blue;
+        color: white;
+    }
 
 }
