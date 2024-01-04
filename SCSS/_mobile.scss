@@ -123,20 +123,33 @@ header {
     }
 }
 
+
+// SEARCH STYLES
+// SEARCH MOBILE STYLES
 .search {
-    position: relative;
+    //position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: .5rem auto;
-    
+    margin: .5rem auto; 
+}
+
+.search-mobile {
+    display: none;
+    @media (min-width: 31.25em){
+        display: block;
+    }
+
+    @media (min-width: 48.125em){
+        display: none;
+    }
 }
 
 .search button {
     position: absolute;
     background-color: transparent;
-    position: absolute;
+    //position: absolute;
     right: .4rem;
     background-color: transparent;
     transform: scaleX(-1);
@@ -148,10 +161,6 @@ header {
     background-color: rgb(222, 222, 222);
     box-shadow: inset 0px 0px 3px $light-blue;
     text-transform: capitalize;
-}
-
-#search-btn {
-    
 }
 
 
