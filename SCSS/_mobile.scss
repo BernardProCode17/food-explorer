@@ -99,7 +99,7 @@ header {
     margin: .2rem auto;
     width: 100%;
 
-    & li {
+    li {
         font-family: $Nav-text;
         text-align: center;
 
@@ -107,7 +107,7 @@ header {
         width: 100%;
     }
 
-    & a {
+    a {
         display: block;
         background-color: $light-blue;
         border: 1px solid $Deep-blue;
@@ -115,12 +115,13 @@ header {
         text-decoration: none;
         padding: .5rem;
 
-    }
+        &:hover {
+            background-color: $header-colour;
+            color: $light-blue;
+        }
 
-    & li a:hover {
-        background-color: $header-colour;
-        color: $light-blue;
     }
+  
 }
 
 
@@ -155,7 +156,7 @@ header {
     transform: scaleX(-1);
 }
 
-#search {
+#search-input {
     width: 100%;
     border: 0px;
     background-color: rgb(222, 222, 222);

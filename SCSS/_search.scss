@@ -1,0 +1,68 @@
+// Search Box Styles
+@use 'variables' as *;
+
+.search {
+
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    margin: .5rem 0; 
+
+    &.search-mobile {
+        display: none;
+    }
+
+    #search-input {
+        width: 160px;
+        border: 0;
+        background-color: rgb(222, 222, 222);
+        box-shadow: inset 0 0 3px $light-blue;
+        text-transform: capitalize;
+        border-radius: 0.2rem;
+
+        @at-root .search-desktop #search-input {
+            width:100%;
+            border-radius: 0;
+        }
+    }
+
+    &.search-desktop {
+        margin: 0;
+    }
+
+    button {
+        position: absolute;
+        right: .4rem;
+        top: 0.2rem;
+        transform: scaleX(-1);
+        background-color: $search-box;
+        border: none;
+    }
+
+    @media (min-width: $tablet-small){
+        
+        &.search-mobile {
+            display: flex;
+        }
+
+        &.search-desktop {
+            display: none;
+        }
+
+    }
+
+    @media (min-width: $tablet-large){
+        &.search-mobile {
+            margin-right: 1.2rem;
+        }
+    }
+
+    @media (min-width: $desktop-small){
+        &.search-mobile {
+            display: none;
+        }
+    }
+
+}
+
+

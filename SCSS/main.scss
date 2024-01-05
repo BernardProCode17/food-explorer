@@ -1,7 +1,12 @@
 // MW Restructuring
+@use 'defaults';
 @use 'header';
 @use 'search';
 @use 'social-media';
+@use 'main-navigation';
+
+// Utilities
+@use 'utilities';
 
 
 

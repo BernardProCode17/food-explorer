@@ -1,0 +1,45 @@
+// Default Styles
+@use 'variables' as *;
+
+body {
+    background-image: url(../Images/bg.jpg);
+    font-family: $Body-text;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $body-colour;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+}
+
+figcaption {
+    text-transform: uppercase;
+}
+
+article {
+    background-color: $header-colour;
+    color: $body-colour;
+    padding: .5rem;
+}
+
+button {
+    border: 0px;
+    background-color: $light-blue;
+    color: $HLT;
+    text-transform: uppercase;
+    padding: .3rem;
+}
+
+svg {
+    fill: $Deep-blue;
+}
+
+input {
+    padding: .5rem;
+}
