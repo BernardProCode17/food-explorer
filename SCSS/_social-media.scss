@@ -10,6 +10,7 @@
     a {
         position: relative;
         padding: .5rem;
+        text-decoration: none;
 
         svg {
             width: 30px;
@@ -42,7 +43,7 @@
             content: url(../Icons/Icons/facebook-f.svg);
             width: 41%;
             left: 14px;
-            background-color: $header-colour;
+            background-color: transparent;
             
         }
 
@@ -51,12 +52,12 @@
             width: 64%;
             left: 8.5px;
             top: 7.75px;
-            background-color: $header-colour;
+            background-color: transparent;
         }
 
         &:before {
             content: url(../Icons/Icons/twitter.svg);
-            background-color: $header-colour;
+            background-color: transparent;
         }
 
     }
@@ -66,6 +67,17 @@
     }
 
     @media (min-width: $tablet-small){
+
+        a {
+            &:hover:before {
+                height: 0%;
+            }
+        }
+
+        svg :hover {
+            fill: grey;
+        }
+
         &.social-media-navigation-bar {
             display: none;
         }
@@ -75,11 +87,20 @@
         &.social-media-mobile {
             display: block;
         }
+
+        .social-media a svg {
+            fill: $social-icon;
+            width: 1.5rem;
+            height: 1.5rem;
+            transition: fill 0.3s ease;
+    
+            
+        }
     }
 
     @media (min-width: $desktop-small){
         &.social-media-navigation-bar {
-            display: block;
+            display: none;
         }
     }
 

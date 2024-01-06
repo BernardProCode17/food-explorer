@@ -3,26 +3,21 @@
 
 header {
 
-    padding: .5rem;
+    
     background-color: $header-colour;
-    border: 5px solid red;
+    
 
     .logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        > * {
-            border: 1px solid green;
-        }
+        padding: .5rem;
+       
         
     }
 
     .navigation {
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
-        // position: relative;
+       
     
         svg {
             height: 35px;
@@ -48,6 +43,16 @@ header {
             margin-right: auto;
         }
         
+    }
+
+    @media (min-width: $desktop-small){
+        width: 100%;
+
+        .logo {
+            margin: 0 auto;
+            max-width: 63.75rem;
+        }
+
     }
 
 }

@@ -48,6 +48,8 @@
         list-style-type: none;
         background-color: $Deep-blue;
         padding: 0;
+        width: 100%;
+        margin: 0 auto;
 
 
         .nav-link {
@@ -63,8 +65,26 @@
 
         }
 
+        .nav-bar-desktop {
+            width: 90%;
+        }
+
+    }
+
+    @media (min-width: $desktop-small){
+        width: 100%;
+
+        .nav-bar-desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           
+            max-width: 63.75rem;
+            
+        }
     }
   
+
 }
 
 // .nav-bar {

@@ -1,0 +1,48 @@
+// Articles styles
+@use 'variables' as *;
+
+.articles {
+    
+   
+
+    h2 {
+       color: $light-blue;
+       font-size: 2rem;
+       margin: .5rem 0 0;
+       font-weight: 400;
+       width: 100%;
+   }
+
+    article {
+       margin: 0 0 0.8rem 0;
+
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: end;
+       width: 100%;
+   }
+
+    p {
+       margin: 0.2rem auto 1.2rem;
+       width: 100%;
+   }
+
+
+
+}
+
+@media (min-width: $tablet-small) {
+
+    .articles h2,
+    .articles p,
+    .articles img {
+        width: 100%;
+    }
+}
+
+@media (min-width : $desktop-small) {
+    .articles {
+        width: 74%;
+    }
+
+}

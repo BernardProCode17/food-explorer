@@ -61,7 +61,14 @@
         &.search-mobile {
             display: none;
         }
+
+        &.search-desktop {
+            display: block;
+            order: 2;
+        }
     }
+
+
 
 }
 

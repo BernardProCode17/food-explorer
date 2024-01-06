@@ -1,0 +1,39 @@
+// Footer style
+@use 'variables' as *;
+
+footer {
+    display: block;
+    background-color: $Deep-blue;
+    color: $HLT;
+    padding: .5rem;
+    
+    
+
+    & p {
+        margin: 0;
+    }
+
+    & a {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet-small) {
+    footer {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer a {
+        display: block;
+        padding: 0 .5rem;
+        max-width: fit-content;
+        background-color: $light-blue;
+        color: white;
+    }
+}

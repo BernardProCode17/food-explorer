@@ -1,4 +1,6 @@
 // Utilities
+@use 'variables' as *;
+
 .accessibly-hidden {
     position: absolute;
     width: 1px;
@@ -8,4 +10,54 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    margin: .5rem;
+    
+}
+
+.photo-grid {
+    order: 1;
+}
+
+.sidebar {
+    order: 2;
+}
+
+.articles {
+    order: 3;
+}
+
+.post-btn {
+    order: 4;
+    text-align: left;
+    background-color: transparent;
+    color: $light-blue;
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media (min-width: $desktop-small) {
+
+    .site-wrapper {
+        position: relative;
+        max-width: 1020px;
+        margin: 0 auto;
+
+        justify-content: flex-start;
+        
+    }
 }
